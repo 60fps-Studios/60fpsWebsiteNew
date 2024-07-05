@@ -45,9 +45,9 @@ const Hero = ({ handleNavigation }) => {
       <div className="sticky top-0 h-screen overflow-hidden">
         <div className="h-[10%] w-full"></div>
         <div className="h-[90%] w-full">
-          <div className="flex h-1/2 items-end justify-start px-4 pb-5 lg:items-center lg:pb-0">
+          <div className="flex h-1/2 justify-start px-4 pb-5 portrait:items-end landscape:items-center landscape:pb-0">
             <motion.h1
-              className="origin-left text-center text-5xl lg:text-9xl"
+              className="origin-left text-center portrait:text-5xl landscape:text-6xl landscape:lg:text-9xl"
               style={{
                 x: xTranslate,
                 opacity: headingOpacity,
@@ -56,7 +56,7 @@ const Hero = ({ handleNavigation }) => {
             >
               60fps
             </motion.h1>
-            <div className="absolute left-16 right-10 top-10 h-full origin-top-right lg:left-auto lg:top-20 lg:w-1/4">
+            <div className="absolute h-full origin-top-right portrait:left-16 portrait:right-10 portrait:top-10 landscape:left-auto landscape:right-12 landscape:top-5 landscape:w-1/4 landscape:lg:right-10 landscape:lg:top-20">
               <StartProjectButton
                 scale={buttonScale}
                 opacity={buttonOpacity}
@@ -65,10 +65,10 @@ const Hero = ({ handleNavigation }) => {
               />
             </div>
           </div>
-          <div className="relative flex h-1/2 items-start justify-end px-4 pt-5 lg:items-center lg:pt-0">
-            <div className="absolute bottom-16 left-10 right-10 origin-bottom-left lg:right-0 lg:w-1/4">
+          <div className="relative flex h-1/2 justify-end px-4 portrait:items-start portrait:pt-5 landscape:items-center landscape:pt-0">
+            <div className="absolute left-10 origin-bottom-left portrait:bottom-16 portrait:right-10 landscape:bottom-10 landscape:right-0 landscape:w-1/4 landscape:lg:bottom-16">
               <motion.p
-                className="w-full origin-bottom text-wrap text-xl lg:origin-bottom-left lg:text-3xl"
+                className="w-full text-wrap portrait:origin-bottom portrait:text-xl landscape:origin-bottom-left landscape:text-xl landscape:lg:text-3xl"
                 style={{
                   scale: textScale,
                   filter: textBlur,
@@ -80,7 +80,7 @@ const Hero = ({ handleNavigation }) => {
             </div>
 
             <motion.h1
-              className="origin-right text-center text-5xl lg:text-9xl"
+              className="origin-right text-center portrait:text-5xl landscape:text-6xl landscape:lg:text-9xl"
               style={{
                 x: xTranslateReverse,
                 opacity: headingOpacity,

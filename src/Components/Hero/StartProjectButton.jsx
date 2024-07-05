@@ -6,7 +6,7 @@ const StartProjectButton = ({ opacity, scale, blur, handleNavigation }) => {
   return (
     <motion.button
       onClick={handleNavigation}
-      className="relative flex size-52 flex-col items-center justify-center rounded-full border-2 border-white text-white"
+      className="relative flex flex-col items-center justify-center rounded-full border-2 border-white text-white portrait:size-52 landscape:size-44 landscape:lg:size-52"
       style={{
         opacity,
         scale,
