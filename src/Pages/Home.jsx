@@ -1,6 +1,6 @@
 import React from "react";
 import Hero from "../Sections/Home/Hero";
-import Video from "../Sections/Home/Video";
+import VideoSection from "../Sections/Home/VideoSection";
 import BrandPhilosophy from "../Sections/Home/BrandPhilosophy";
 import Services from "../Sections/Home/Services";
 import Works from "../Sections/Home/Works";
@@ -12,13 +12,15 @@ const Home = () => {
   };
   return (
     <>
-      <Hero handleNavigation={handleNewProjectClick} />
-      {/* 
-      <Video />
-      <BrandPhilosophy /> */}
-      {/* <Services /> */}
+      <Hero handleNavigation={handleNewProjectClick}>
+        <>
+          <VideoSection />
+          <BrandPhilosophy />
+        </>
+      </Hero>
+      <Services />
       {/* <Works />*/}
-      {/* <Clients /> */}
+      <Clients />
       {/*<Footer /> */}
     </>
   );

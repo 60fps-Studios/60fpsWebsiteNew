@@ -6,3 +6,7 @@
   font-family: "Neometric_Alt";
   src: url("../fonts/NeometricAltExtraBold.otf");
 }
+
+.html {
+  scroll-behavior: smooth;
+}

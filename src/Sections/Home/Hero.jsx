@@ -1,50 +1,52 @@
 import React, { useRef } from "react";
 import { HeroText } from "../../data";
-import {
-  motion,
-  useScroll,
-  useTransform,
-  easeIn,
-  easeInOut,
-} from "framer-motion";
+import { motion, useScroll, useTransform, easeInOut } from "framer-motion";
 import StartProjectButton from "../../Components/Hero/StartProjectButton";
 
-const Hero = ({ handleNavigation }) => {
+const Hero = ({ handleNavigation, children }) => {
   const targetRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: targetRef,
+    offset: ["start start", "end start"],
   });
-  const xTranslate = useTransform(scrollYProgress, [0, 1], ["0%", "-210%"], {
+  const xTranslate = useTransform(scrollYProgress, [0, 0.6], ["0%", "-210%"], {
     ease: easeInOut,
   });
   const xTranslateReverse = useTransform(
     scrollYProgress,
-    [0, 1],
+    [0, 0.6],
     ["0%", "210%"],
     { ease: easeInOut },
   );
-  const headingOpacity = useTransform(scrollYProgress, [0, 0.95, 1], [1, 1, 0]);
+  const headingOpacity = useTransform(
+    scrollYProgress,
+    [0, 0.7, 0.6],
+    [1, 1, 0],
+  );
 
-  const textScale = useTransform(scrollYProgress, [0, 1], [1, 1.5]);
+  const textScale = useTransform(scrollYProgress, [0, 0.6], [1, 1.5]);
   const textOpacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
   const textBlur = useTransform(
     scrollYProgress,
-    [0, 1],
+    [0, 0.6],
     ["blur(0px)", "blur(15px)"],
   );
 
-  const buttonScale = useTransform(scrollYProgress, [0, 1], [1, 1.5]);
-  const buttonOpacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
+  const buttonScale = useTransform(scrollYProgress, [0, 0.6], [1, 1.5]);
+  const buttonOpacity = useTransform(scrollYProgress, [0, 0.6], [1, 0]);
   const buttonBlur = useTransform(
     scrollYProgress,
-    [0, 1],
+    [0, 0.6],
     ["blur(0px)", "blur(15px)"],
   );
+
   return (
-    <div ref={targetRef} className="relative top-0 z-10 h-[300vh] select-none">
+    <div ref={targetRef} className="relative top-0 z-10 h-[500vh] select-none">
       <div className="sticky top-0 h-screen overflow-hidden">
+        {children}
+
         <div className="h-[10%] w-full"></div>
-        <div className="h-[90%] w-full">
+        <div className="z-10 h-[90%] w-full">
           <div className="flex h-1/2 justify-start px-4 pb-5 portrait:items-end landscape:items-center landscape:pb-0">
             <motion.h1
               className="origin-left text-center portrait:text-5xl landscape:text-6xl landscape:lg:text-9xl"

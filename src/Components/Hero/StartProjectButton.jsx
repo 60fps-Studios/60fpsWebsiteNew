@@ -6,7 +6,7 @@ const StartProjectButton = ({ opacity, scale, blur, handleNavigation }) => {
   return (
     <motion.button
       onClick={handleNavigation}
-      className="relative flex flex-col items-center justify-center rounded-full border-2 border-white text-white portrait:size-52 landscape:size-44 landscape:lg:size-52"
+      className="relative flex flex-col items-center justify-center rounded-full border-2 border-white portrait:size-52 landscape:size-44 landscape:lg:size-52"
       style={{
         opacity,
         scale,
@@ -27,7 +27,18 @@ const StartProjectButton = ({ opacity, scale, blur, handleNavigation }) => {
         ease: "easeInOut",
       }}
     >
-      <motion.svg
+      <motion.div
+        className="absolute inset-0 bg-white"
+        initial={{ scale: 0, originX: 0, originY: 1 }}
+        variants={{
+          hover: { scale: 1 },
+        }}
+        transition={{
+          duration: 0.2,
+          ease: "easeOut",
+        }}
+      />
+      <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
@@ -40,7 +51,7 @@ const StartProjectButton = ({ opacity, scale, blur, handleNavigation }) => {
           strokeLinejoin="round"
           d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
         />
-      </motion.svg>
+      </svg>
       <span className="text-lg">{ProjectButtonText}</span>
     </motion.button>
   );
