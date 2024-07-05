@@ -2,7 +2,11 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        neometric_alt: ["Neometric_Alt", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };

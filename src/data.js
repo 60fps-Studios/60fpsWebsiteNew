@@ -1,3 +1,8 @@
+export const HeroText =
+  "The agency that covers your digital needs in a creative and efficient way";
+
+export const ProjectButtonText = "Start a Project";
+
 export const ServicesDetails = [
   {
     image_src:

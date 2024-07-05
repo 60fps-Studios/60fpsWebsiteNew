@@ -7,14 +7,18 @@ import Works from "../Sections/Home/Works";
 import Clients from "../Sections/Home/Clients";
 import Footer from "../Sections/Footer";
 const Home = () => {
+  const handleNewProjectClick = () => {
+    console.log("New Project Button Clicked");
+  };
   return (
     <>
-      {/* <Hero />
+      <Hero handleNavigation={handleNewProjectClick} />
+      {/* 
       <Video />
       <BrandPhilosophy /> */}
-      <Services />
+      {/* <Services /> */}
       {/* <Works />*/}
-      <Clients />
+      {/* <Clients /> */}
       {/*<Footer /> */}
     </>
   );
