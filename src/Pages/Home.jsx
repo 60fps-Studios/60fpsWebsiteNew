@@ -13,11 +13,9 @@ const Home = () => {
   return (
     <>
       <Hero handleNavigation={handleNewProjectClick}>
-        <>
-          <VideoSection />
-          <BrandPhilosophy />
-        </>
+        <VideoSection />
       </Hero>
+      <BrandPhilosophy />
       <Services />
       {/* <Works />*/}
       <Clients />

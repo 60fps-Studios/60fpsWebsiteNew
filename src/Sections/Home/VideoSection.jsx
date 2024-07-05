@@ -16,10 +16,10 @@ const VideoSection = () => {
   });
   const blur = useTransform(
     scrollYProgress,
-    [0.4, 0.6],
+    [0.2, 0.2],
     ["blur(15px)", "blur(0px)"],
   );
-  const backgroundOpacity = useTransform(scrollYProgress, [0.4, 0.6], [1, 0], {
+  const backgroundOpacity = useTransform(scrollYProgress, [0.2, 0.3], [1, 0], {
     ease: easeOut,
   });
 
