@@ -11,7 +11,7 @@ const BrandPhilosophy = () => {
   const yTransformer = useTransform(
     scrollYProgress,
     [0, 0.7],
-    ["250%", "-100%"],
+    ["150%", "-100%"],
   );
 
   //#region Text Color changing logic
@@ -30,7 +30,7 @@ const BrandPhilosophy = () => {
   const whiteRegionHeight = 20; // 20% of screen height
   // Center of the white region (50% means middle of the screen)
   // Range Between 20 to 60
-  const whiteRegionCenter = 50;
+  const whiteRegionCenter = 35;
 
   // Define color transforms for each line
   const colorTransforms = lines.map((_, index) => {
@@ -50,7 +50,7 @@ const BrandPhilosophy = () => {
     <div ref={targetRef} className="relative top-0 h-[300vh]">
       <div className="sticky top-0 h-screen overflow-hidden">
         <div className="flex h-full w-full justify-center">
-          <div className="h-full w-1/2">
+          <div className="h-full w-2/3 lg:w-1/2">
             <motion.div
               className="w-full text-wrap text-justify portrait:text-xl landscape:text-xl landscape:lg:text-3xl"
               style={{

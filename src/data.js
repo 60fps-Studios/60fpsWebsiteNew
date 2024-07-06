@@ -3,7 +3,8 @@ export const HeroText =
 
 export const ProjectButtonText = "Start a Project";
 
-export const showReel = "https://assets.mixkit.co/videos/914/914-720.mp4";
+export const showReel =
+  "https://storied-cendol-08912c.netlify.app/ShowReel.mov";
 
 export const brandPhilosophy =
   "60fps Studio, a creative marketing agency. We craft immersive online experiences, manage social media, and build web solutions (websites, e-commerce, SEO). We combine creativity, strategy, and data to make your brand stand out. We set digital trends, not just follow them, using the latest tech to help you lead the pack.";
@@ -12,92 +13,68 @@ export const ServicesDetails = [
   {
     image_src:
       "https://media.istockphoto.com/id/1351571961/photo/looking-directly-up-at-the-skyline-of-the-financial-district-in-central-london.jpg?s=1024x1024&w=is&k=20&c=w66hXE0hFdhDestn9AFOaTSR9tUbNLQeCdW8a8fXMDU=",
-    image_image_alt: "",
-    heading: "Heading",
-    text: "lorem ipsum dolor sit amet",
+    image_image_alt: "Creative Services",
+    heading: "Creative Services",
+    text: "From captivating visuals to inspiring spaces, we bring your vision to life.",
   },
   {
     image_src:
       "https://media.istockphoto.com/id/1351571961/photo/looking-directly-up-at-the-skyline-of-the-financial-district-in-central-london.jpg?s=1024x1024&w=is&k=20&c=w66hXE0hFdhDestn9AFOaTSR9tUbNLQeCdW8a8fXMDU=",
-    image_alt: "",
-    heading: "Heading",
-    text: "lorem ipsum dolor sit amet",
+    image_alt: "Digital Presence",
+    heading: "Digital Presence",
+    text: "Content & Design: The Perfect Blend for Online Success.",
   },
   {
     image_src:
       "https://media.istockphoto.com/id/1351571961/photo/looking-directly-up-at-the-skyline-of-the-financial-district-in-central-london.jpg?s=1024x1024&w=is&k=20&c=w66hXE0hFdhDestn9AFOaTSR9tUbNLQeCdW8a8fXMDU=",
-    image_alt: "",
-    heading: "Heading",
-    text: "lorem ipsum dolor sit amet",
+    image_alt: "Marketing Services",
+    heading: "Marketing Services",
+    text: "From Feeds to Streets, We Spread Your Story: Unleash the Power of Integrated Marketing.",
   },
   {
     image_src:
       "https://media.istockphoto.com/id/1351571961/photo/looking-directly-up-at-the-skyline-of-the-financial-district-in-central-london.jpg?s=1024x1024&w=is&k=20&c=w66hXE0hFdhDestn9AFOaTSR9tUbNLQeCdW8a8fXMDU=",
-    image_alt: "",
-    heading: "Heading",
-    text: "lorem ipsum dolor sit amet",
+    image_alt: "Brand Development",
+    heading: "Brand Development",
+    text: "From Strategy to Soul: We Craft Brands with Impact.",
   },
 ];
 
 export const ClientLogos = [
   {
-    image:
-      "https://plus.unsplash.com/premium_photo-1661914978519-52a11fe159a7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    image_alt: "",
+    image: "https://storied-cendol-08912c.netlify.app/Volvo.png",
+    image_alt: "Volvo",
   },
   {
-    image:
-      "https://plus.unsplash.com/premium_photo-1661914978519-52a11fe159a7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    image_alt: "",
+    image: "https://storied-cendol-08912c.netlify.app/AppleTv.png",
+    image_alt: "AppleTv",
   },
   {
-    image:
-      "https://plus.unsplash.com/premium_photo-1661914978519-52a11fe159a7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    image_alt: "",
+    image: "https://storied-cendol-08912c.netlify.app/LeagueOfLegends.png",
+    image_alt: "LeagueOfLegends",
   },
   {
-    image:
-      "https://plus.unsplash.com/premium_photo-1661914978519-52a11fe159a7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    image_alt: "",
+    image: "https://storied-cendol-08912c.netlify.app/Marvel.png",
+    image_alt: "Marvel",
   },
   {
-    image:
-      "https://plus.unsplash.com/premium_photo-1661914978519-52a11fe159a7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    image_alt: "",
+    image: "https://storied-cendol-08912c.netlify.app/Mercedes.png",
+    image_alt: "Mercedes",
   },
   {
-    image:
-      "https://plus.unsplash.com/premium_photo-1661914978519-52a11fe159a7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    image_alt: "",
+    image: "https://storied-cendol-08912c.netlify.app/OutPost.png",
+    image_alt: "OutPost",
   },
   {
-    image:
-      "https://plus.unsplash.com/premium_photo-1661914978519-52a11fe159a7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    image_alt: "",
+    image: "https://storied-cendol-08912c.netlify.app/RoitGames.png",
+    image_alt: "RoitGames",
   },
   {
-    image:
-      "https://plus.unsplash.com/premium_photo-1661914978519-52a11fe159a7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    image_alt: "",
+    image: "https://storied-cendol-08912c.netlify.app/Toho.png",
+    image_alt: "Toho",
   },
   {
-    image:
-      "https://plus.unsplash.com/premium_photo-1661914978519-52a11fe159a7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    image_alt: "",
-  },
-  {
-    image:
-      "https://plus.unsplash.com/premium_photo-1661914978519-52a11fe159a7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    image_alt: "",
-  },
-  {
-    image:
-      "https://plus.unsplash.com/premium_photo-1661914978519-52a11fe159a7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    image_alt: "",
-  },
-  {
-    image:
-      "https://plus.unsplash.com/premium_photo-1661914978519-52a11fe159a7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    image_alt: "",
+    image: "https://storied-cendol-08912c.netlify.app/UPGov.png",
+    image_alt: "Uttar Pradesh Government",
   },
 ];
