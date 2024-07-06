@@ -25,7 +25,7 @@ const Hero = ({ handleNavigation, children }) => {
   );
 
   const textScale = useTransform(scrollYProgress, [0, 0.6], [1, 1.5]);
-  const textOpacity = useTransform(scrollYProgress, [0, 1], [1, 0]);
+  const textOpacity = useTransform(scrollYProgress, [0, 0.6], [1, 0]);
   const textBlur = useTransform(
     scrollYProgress,
     [0, 0.6],
