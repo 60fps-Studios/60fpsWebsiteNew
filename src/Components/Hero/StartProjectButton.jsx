@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
 import React from "react";
-import { PROJECT_BUTTON_TEXT } from "../../data";
+import { NEW_PROJECT_BUTTON, } from "../../data";
 
 const StartProjectButton = ({ opacity, scale, blur, handleNavigation }) => {
   return (
     <motion.button
-      onClick={handleNavigation}
+      onClick={()=>handleNavigation(NEW_PROJECT_BUTTON.link)}
       className="relative flex flex-col items-center justify-center rounded-full border-2 border-white portrait:size-52 landscape:size-44 landscape:lg:size-52"
       style={{
         opacity,
@@ -52,7 +52,7 @@ const StartProjectButton = ({ opacity, scale, blur, handleNavigation }) => {
           d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
         />
       </svg>
-      <span className="text-lg">{PROJECT_BUTTON_TEXT}</span>
+      <span className="text-lg">{NEW_PROJECT_BUTTON.text}</span>
     </motion.button>
   );
 };
