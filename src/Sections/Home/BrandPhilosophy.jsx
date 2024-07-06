@@ -1,6 +1,6 @@
 import React, { useRef, useMemo } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { brandPhilosophy } from "../../data";
+import { BRAND_PHILOSOPHY } from "../../data";
 
 const BrandPhilosophy = () => {
   const targetRef = useRef(null);
@@ -15,7 +15,7 @@ const BrandPhilosophy = () => {
   );
 
   //#region Text Color changing logic
-  const words = useMemo(() => brandPhilosophy.split(" "), [brandPhilosophy]);
+  const words = useMemo(() => BRAND_PHILOSOPHY.split(" "), [BRAND_PHILOSOPHY]);
   // Group words into lines (adjust wordsPerLine as needed)
   const wordsPerLine = 10;
   const lines = useMemo(() => {

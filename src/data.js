@@ -1,15 +1,15 @@
-export const HeroText =
+export const HERO_TEXT =
   "The agency that covers your digital needs in a creative and efficient way";
 
-export const ProjectButtonText = "Start a Project";
+export const PROJECT_BUTTON_TEXT = "Start a Project";
 
-export const showReel =
+export const SHOW_REEL =
   "https://storied-cendol-08912c.netlify.app/ShowReel.mov";
 
-export const brandPhilosophy =
+export const BRAND_PHILOSOPHY =
   "60fps Studio, a creative marketing agency. We craft immersive online experiences, manage social media, and build web solutions (websites, e-commerce, SEO). We combine creativity, strategy, and data to make your brand stand out. We set digital trends, not just follow them, using the latest tech to help you lead the pack.";
 
-export const ServicesDetails = [
+export const SERVICE_DETAILS = [
   {
     image_src:
       "https://storied-cendol-08912c.netlify.app/Services/Creative Services.jpg",
@@ -40,7 +40,7 @@ export const ServicesDetails = [
   },
 ];
 
-export const ClientLogos = [
+export const CLIENT_LOGOS = [
   {
     image: "https://storied-cendol-08912c.netlify.app/ClientLogos/Volvo.png",
     image_alt: "Volvo",
@@ -90,5 +90,50 @@ export const ClientLogos = [
   {
     image: "https://storied-cendol-08912c.netlify.app/ClientLogos/UrjaCart.png",
     image_alt: "UrjaCart",
+  },
+];
+
+export const PROJECT_IMAGES = [
+  {
+    image_url:
+      "https://plus.unsplash.com/premium_photo-1661281234131-5a81d87a4d2a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvamVjdHN8ZW58MHx8MHx8fDA%3D",
+    image_alt: "",
+    title: "Title",
+    description: "lorem ipsum dolor sit amet",
+  },
+  {
+    image_url:
+      "https://plus.unsplash.com/premium_photo-1674675647180-451ecf533c5a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cHJvamVjdHN8ZW58MHx8MHx8fDA%3D",
+    image_alt: "",
+    title: "Title",
+    description: "lorem ipsum dolor sit amet",
+  },
+  {
+    image_url:
+      "https://images.unsplash.com/photo-1557200134-3103da7b6bff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHByb2plY3RzfGVufDB8fDB8fHww",
+    image_alt: "",
+    title: "Title",
+    description: "lorem ipsum dolor sit amet",
+  },
+  {
+    image_url:
+      "https://images.unsplash.com/photo-1708308876880-2b256abb65df?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHByb2plY3RzfGVufDB8fDB8fHww",
+    image_alt: "",
+    title: "Title",
+    description: "lorem ipsum dolor sit amet",
+  },
+  {
+    image_url:
+      "https://media.istockphoto.com/id/1169460143/photo/diverse-team-of-creative-millennial-coworkers-in-a-startup-brainstorming-strategies.webp?b=1&s=170667a&w=0&k=20&c=S1yRHi4SNyLg7V9bMxUwfr1QJLGDkiIqXJGqVTcsMVc=",
+    image_alt: "",
+    title: "Title",
+    description: "lorem ipsum dolor sit amet",
+  },
+  {
+    image_url:
+      "https://media.istockphoto.com/id/629296762/photo/leading-the-planning-process.webp?b=1&s=170667a&w=0&k=20&c=dvQaP2Bph3fJiESw1PEvwYQdSWN_yLmxJ4viPxpLaOI=",
+    image_alt: "",
+    title: "Title",
+    description: "lorem ipsum dolor sit amet",
   },
 ];

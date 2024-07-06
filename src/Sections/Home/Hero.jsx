@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { HeroText } from "../../data";
+import { HERO_TEXT } from "../../data";
 import { motion, useScroll, useTransform, easeInOut } from "framer-motion";
 import StartProjectButton from "../../Components/Hero/StartProjectButton";
 
@@ -77,7 +77,7 @@ const Hero = ({ handleNavigation, children }) => {
                   opacity: textOpacity,
                 }}
               >
-                {HeroText}
+                {HERO_TEXT}
               </motion.p>
             </div>
 

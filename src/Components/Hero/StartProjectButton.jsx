@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import React from "react";
-import { ProjectButtonText } from "../../data";
+import { PROJECT_BUTTON_TEXT } from "../../data";
 
 const StartProjectButton = ({ opacity, scale, blur, handleNavigation }) => {
   return (
@@ -52,7 +52,7 @@ const StartProjectButton = ({ opacity, scale, blur, handleNavigation }) => {
           d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
         />
       </svg>
-      <span className="text-lg">{ProjectButtonText}</span>
+      <span className="text-lg">{PROJECT_BUTTON_TEXT}</span>
     </motion.button>
   );
 };

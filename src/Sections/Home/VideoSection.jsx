@@ -7,7 +7,7 @@ import {
   useTransform,
 } from "framer-motion";
 import Video from "../../Components/Video";
-import { showReel } from "../../data";
+import { SHOW_REEL } from "../../data";
 
 const VideoSection = () => {
   const targetRef = useRef(null);
@@ -35,7 +35,7 @@ const VideoSection = () => {
         }}
       />
 
-      <Video src={showReel} />
+      <Video src={SHOW_REEL} />
     </motion.div>
   );
 };
