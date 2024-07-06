@@ -1,8 +1,10 @@
 export const HERO_TEXT =
   "The agency that covers your digital needs in a creative and efficient way";
 
-export const NEW_PROJECT_BUTTON = {text:"Start a Project",link:"https://docs.google.com/forms/d/e/1FAIpQLSczBokvaCvrsP-ZNyhOetuy1hMGIYA8-aS5suHVlVBnN6gcLw/viewform"};
-
+export const NEW_PROJECT_BUTTON = {
+  text: "Start a Project",
+  link: "https://docs.google.com/forms/d/e/1FAIpQLSczBokvaCvrsP-ZNyhOetuy1hMGIYA8-aS5suHVlVBnN6gcLw/viewform",
+};
 
 export const SHOW_REEL =
   "https://storied-cendol-08912c.netlify.app/ShowReel.mov";

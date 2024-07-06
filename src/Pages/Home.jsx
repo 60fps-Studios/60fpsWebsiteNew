@@ -1,5 +1,5 @@
 import React from "react";
-import {useNavigate} from "react-router-dom"
+import { useNavigate } from "react-router-dom";
 import Hero from "../Sections/Home/Hero";
 import VideoSection from "../Sections/Home/VideoSection";
 import BrandPhilosophy from "../Sections/Home/BrandPhilosophy";
@@ -8,10 +8,15 @@ import Works from "../Sections/Home/Works";
 import Clients from "../Sections/Home/Clients";
 import Footer from "../Sections/Footer";
 const Home = () => {
-  const navigate = useNavigate()
- 
-  const handleNavigate= (link) => {
-    navigate(link)
+  const navigate = useNavigate();
+  const handleNavigate = (link) => {
+    if (link.startsWith("http://") || link.startsWith("https://")) {
+      // External link
+      window.open(link, "_blank", "noopener,noreferrer");
+    } else {
+      // Internal link
+      navigate(link);
+    }
   };
   return (
     <>
