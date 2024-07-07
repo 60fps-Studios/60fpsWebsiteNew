@@ -99,44 +99,44 @@ export const CLIENT_LOGOS = [
 export const PROJECT_IMAGES = [
   {
     image_url:
-      "https://plus.unsplash.com/premium_photo-1661281234131-5a81d87a4d2a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvamVjdHN8ZW58MHx8MHx8fDA%3D",
-    image_alt: "",
-    title: "Title",
-    description: "lorem ipsum dolor sit amet",
+      "https://storied-cendol-08912c.netlify.app/Projects/Project1.jpg",
+    image_alt: "3D Models",
+    title: "3D Models",
+    description: "Formula1 Mercedes AMG F1 Performance",
   },
   {
     image_url:
-      "https://plus.unsplash.com/premium_photo-1674675647180-451ecf533c5a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cHJvamVjdHN8ZW58MHx8MHx8fDA%3D",
-    image_alt: "",
-    title: "Title",
-    description: "lorem ipsum dolor sit amet",
+      "https://storied-cendol-08912c.netlify.app/Projects/Project2.jpg",
+    image_alt: "Motion Graphics",
+    title: "Motion Graphics",
+    description: "Apple TV Monarch Legacy of Monsters",
   },
   {
     image_url:
-      "https://images.unsplash.com/photo-1557200134-3103da7b6bff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHByb2plY3RzfGVufDB8fDB8fHww",
-    image_alt: "",
-    title: "Title",
-    description: "lorem ipsum dolor sit amet",
+      "https://storied-cendol-08912c.netlify.app/Projects/Project3.jpg",
+    image_alt: "Game Graphics",
+    title: "Game Graphics",
+    description: "Riot Games - League of Legends",
   },
   {
     image_url:
-      "https://images.unsplash.com/photo-1708308876880-2b256abb65df?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHByb2plY3RzfGVufDB8fDB8fHww",
-    image_alt: "",
-    title: "Title",
-    description: "lorem ipsum dolor sit amet",
+      "https://storied-cendol-08912c.netlify.app/Projects/Project4.jpg",
+    image_alt: "Sound Design",
+    title: "Sound Design",
+    description: "Marvel - Moon Knight",
   },
   {
     image_url:
-      "https://media.istockphoto.com/id/1169460143/photo/diverse-team-of-creative-millennial-coworkers-in-a-startup-brainstorming-strategies.webp?b=1&s=170667a&w=0&k=20&c=S1yRHi4SNyLg7V9bMxUwfr1QJLGDkiIqXJGqVTcsMVc=",
-    image_alt: "",
-    title: "Title",
-    description: "lorem ipsum dolor sit amet",
+      "https://storied-cendol-08912c.netlify.app/Projects/Project5.png",
+    image_alt: "VFX",
+    title: "VFX",
+    description: "Marvel - Ms. Marvel",
   },
   {
     image_url:
-      "https://media.istockphoto.com/id/629296762/photo/leading-the-planning-process.webp?b=1&s=170667a&w=0&k=20&c=dvQaP2Bph3fJiESw1PEvwYQdSWN_yLmxJ4viPxpLaOI=",
-    image_alt: "",
-    title: "Title",
-    description: "lorem ipsum dolor sit amet",
+      "https://storied-cendol-08912c.netlify.app/Projects/Project6.jpg",
+    image_alt: "Studio Lighting",
+    title: "Studio Lighting",
+    description: "Volvo S90",
   },
 ];

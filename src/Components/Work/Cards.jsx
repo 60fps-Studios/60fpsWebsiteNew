@@ -12,7 +12,7 @@ const Card = ({ image, OnClick, className }) => {
   };
   return (
     <div
-      className={twMerge("group relative h-full w-full text-black", className)}
+      className={twMerge("group relative h-full w-full text-white", className)}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       onClick={OnClick}
@@ -37,7 +37,7 @@ const Card = ({ image, OnClick, className }) => {
             }}
             animate={isHovered ? "hover" : "initial"}
           >
-            <h4 className="rounded-lg bg-black/20 p-1 text-5xl font-semibold backdrop-blur-sm duration-500 ease-in-out group-hover:bg-black/30">
+            <h4 className="rounded-lg bg-black/20 p-1 text-2xl font-semibold backdrop-blur-sm duration-500 ease-in-out group-hover:bg-black/30 md:text-3xl lg:text-4xl">
               {image.title}
             </h4>
           </motion.div>
