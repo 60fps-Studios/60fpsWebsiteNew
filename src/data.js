@@ -49,10 +49,6 @@ export const CLIENT_LOGOS = [
     image_alt: "Volvo",
   },
   {
-    image: "https://storied-cendol-08912c.netlify.app/ClientLogos/AppleTv.png",
-    image_alt: "AppleTv",
-  },
-  {
     image:
       "https://storied-cendol-08912c.netlify.app/ClientLogos/LeagueOfLegends.png",
     image_alt: "LeagueOfLegends",
@@ -70,21 +66,8 @@ export const CLIENT_LOGOS = [
     image_alt: "OutPost",
   },
   {
-    image:
-      "https://storied-cendol-08912c.netlify.app/ClientLogos/RoitGames.png",
-    image_alt: "RoitGames",
-  },
-  {
     image: "https://storied-cendol-08912c.netlify.app/ClientLogos/Toho.png",
     image_alt: "Toho",
-  },
-  {
-    image: "https://storied-cendol-08912c.netlify.app/ClientLogos/UPGov.png",
-    image_alt: "Uttar Pradesh Government",
-  },
-  {
-    image: "https://storied-cendol-08912c.netlify.app/ClientLogos/Carbex.png",
-    image_alt: "Carbex",
   },
   {
     image: "https://storied-cendol-08912c.netlify.app/ClientLogos/Saurja.png",
@@ -94,6 +77,23 @@ export const CLIENT_LOGOS = [
     image: "https://storied-cendol-08912c.netlify.app/ClientLogos/UrjaCart.png",
     image_alt: "UrjaCart",
   },
+  {
+    image: "https://storied-cendol-08912c.netlify.app/ClientLogos/Carbex.png",
+    image_alt: "Carbex",
+  },
+  {
+    image:
+      "https://storied-cendol-08912c.netlify.app/ClientLogos/RoitGames.png",
+    image_alt: "RoitGames",
+  },
+  {
+    image: "https://storied-cendol-08912c.netlify.app/ClientLogos/AppleTv.png",
+    image_alt: "AppleTv",
+  },
+  /* {
+    image: "https://storied-cendol-08912c.netlify.app/ClientLogos/UPGov.png",
+    image_alt: "Uttar Pradesh Government",
+  }, */
 ];
 
 export const PROJECT_IMAGES = [
@@ -110,13 +110,6 @@ export const PROJECT_IMAGES = [
     image_alt: "Motion Graphics",
     title: "Motion Graphics",
     description: "Apple TV Monarch Legacy of Monsters",
-  },
-  {
-    image_url:
-      "https://storied-cendol-08912c.netlify.app/Projects/Project3.jpg",
-    image_alt: "Game Graphics",
-    title: "Game Graphics",
-    description: "Riot Games - League of Legends",
   },
   {
     image_url:
@@ -139,4 +132,11 @@ export const PROJECT_IMAGES = [
     title: "Studio Lighting",
     description: "Volvo S90",
   },
+  /* {
+    image_url:
+      "https://storied-cendol-08912c.netlify.app/Projects/Project3.jpg",
+    image_alt: "Game Graphics",
+    title: "Game Graphics",
+    description: "Riot Games - League of Legends",
+  }, */
 ];

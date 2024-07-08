@@ -15,6 +15,11 @@ const Clients = () => {
               alt={image.image_alt}
             />
           ))}
+          <div className="flex h-full w-full items-center justify-center">
+            <h5 className="text-xl font-semibold md:text-2xl lg:text-3xl">
+              And many more...
+            </h5>
+          </div>
         </div>
       </div>
     </div>

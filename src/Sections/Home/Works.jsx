@@ -11,6 +11,11 @@ const Works = () => {
           {PROJECT_IMAGES.map((image, index) => (
             <Card key={index} image={image} className={"aspect-video w-full"} />
           ))}
+          <div className="flex h-full w-full items-center justify-center">
+            <h4 className="text-2xl font-semibold md:text-3xl lg:text-4xl">
+              And many more...
+            </h4>
+          </div>
         </div>
       </div>
     </div>
