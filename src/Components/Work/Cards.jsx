@@ -12,7 +12,10 @@ const Card = ({ image, OnClick, className }) => {
   };
   return (
     <div
-      className={twMerge("group relative h-full w-full text-black", className)}
+      className={twMerge(
+        "group relative h-full w-full font-poppins text-black",
+        className,
+      )}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       onClick={OnClick}

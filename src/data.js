@@ -1,5 +1,5 @@
 export const HERO_TEXT =
-  "The agency that covers your digital needs in a creative and efficient way";
+  "The agency that covers your digital needs in a creative and efficient way chicku chicki chiku";
 
 export const NEW_PROJECT_BUTTON = {
   text: "Start a Project",
@@ -8,6 +8,9 @@ export const NEW_PROJECT_BUTTON = {
 
 export const SHOW_REEL =
   "https://storied-cendol-08912c.netlify.app/ShowReel.mov";
+
+export const HERO_BG_VIDEO =
+  "https://storied-cendol-08912c.netlify.app/Videos/Hero/HeroBgVideo.mp4";
 
 export const BRAND_PHILOSOPHY =
   "60fps Studio, a creative marketing agency. We craft immersive online experiences, manage social media, and build web solutions (websites, e-commerce, SEO). We combine creativity, strategy, and data to make your brand stand out. We set digital trends, not just follow them, using the latest tech to help you lead the pack.";

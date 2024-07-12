@@ -47,10 +47,10 @@ const BrandPhilosophy = () => {
   });
   //#endregion
   return (
-    <div ref={targetRef} className="relative top-0 h-[300vh]">
+    <div ref={targetRef} className="font-poppins relative top-0 h-[300vh]">
       <div className="sticky top-0 h-screen overflow-hidden">
         <div className="flex h-full w-full justify-center">
-          <div className="h-full w-2/3 lg:w-1/2">
+          <div className="h-full w-2/3 lg:w-2/3">
             <motion.div
               className="w-full text-wrap text-justify portrait:text-xl landscape:text-xl landscape:lg:text-3xl"
               style={{
@@ -60,7 +60,7 @@ const BrandPhilosophy = () => {
               {lines.map((line, index) => (
                 <motion.p
                   key={index}
-                  className="inline-block portrait:text-xl landscape:text-xl landscape:lg:text-3xl"
+                  className="inline-block portrait:text-xl landscape:text-xl landscape:lg:text-5xl"
                   style={{ color: colorTransforms[index] }}
                 >
                   {line}

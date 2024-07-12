@@ -1,8 +1,11 @@
 import React, { useRef } from "react";
 import { HERO_TEXT } from "../../data";
+import { HERO_BG_VIDEO } from "../../data";
 import { motion, useScroll, useTransform, easeInOut } from "framer-motion";
 import StartProjectButton from "../../Components/Hero/StartProjectButton";
-
+import HeroVid from "../../assets/Videos/Timeline.mov";
+import BgVideo from "../../assets/Videos/BgVideo.mp4";
+import Video from "../../Components/Video";
 const Hero = ({ handleNavigation, children }) => {
   const targetRef = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -46,29 +49,50 @@ const Hero = ({ handleNavigation, children }) => {
         {children}
 
         <div className="h-[10%] w-full"></div>
+
         <div className="z-10 h-[90%] w-full">
           <div className="flex h-1/2 justify-start px-4 pb-5 portrait:items-end landscape:items-center landscape:pb-0">
-            <motion.h1
-              className="origin-left text-center portrait:text-5xl landscape:text-6xl landscape:lg:text-9xl"
+            {/* <motion.div
+              className="pointer-events-none absolute inset-0 z-10 h-screen backdrop-blur-sm"
+              aria-hidden="true"
+              style={{
+                x: xTranslate,
+                opacity: headingOpacity,
+                scale: 2,
+              }}
+            /> */}
+            <motion.div
+              className="pointer-events-none absolute inset-0 z-0 h-screen"
+              aria-hidden="true"
               style={{
                 x: xTranslate,
                 opacity: headingOpacity,
                 scale: 2,
               }}
             >
-              60fps
+              <Video src={HERO_BG_VIDEO} />
+            </motion.div>
+            <motion.h1
+              className="z-20 origin-left text-center font-bold portrait:text-5xl landscape:text-7xl landscape:lg:text-[10rem]"
+              style={{
+                x: xTranslate,
+                opacity: headingOpacity,
+                scale: 2,
+              }}
+            >
+              60FPS
             </motion.h1>
-            <div className="absolute h-full origin-top-right portrait:left-16 portrait:right-10 portrait:top-10 landscape:left-auto landscape:right-12 landscape:top-5 landscape:w-1/4 landscape:lg:right-10 landscape:lg:top-20">
+            <motion.div className="font-poppins absolute z-20 h-full origin-top-right portrait:left-16 portrait:right-10 portrait:top-10 landscape:left-auto landscape:right-12 landscape:top-5 landscape:w-1/4 landscape:lg:right-0 landscape:lg:top-28">
               <StartProjectButton
                 scale={buttonScale}
                 opacity={buttonOpacity}
                 blur={buttonBlur}
                 handleNavigation={handleNavigation}
               />
-            </div>
+            </motion.div>
           </div>
-          <div className="relative flex h-1/2 justify-end px-4 portrait:items-start portrait:pt-5 landscape:items-center landscape:pt-0">
-            <div className="absolute left-10 origin-bottom-left portrait:bottom-16 portrait:right-10 landscape:bottom-10 landscape:right-0 landscape:w-1/4 landscape:lg:bottom-16">
+          <div className="relative z-20 flex h-1/2 justify-end px-4 portrait:items-start portrait:pt-5 landscape:items-center landscape:pt-0">
+            <div className="font-poppins absolute left-10 origin-bottom-left portrait:bottom-16 portrait:right-10 landscape:bottom-10 landscape:right-0 landscape:w-1/4 landscape:lg:bottom-28">
               <motion.p
                 className="w-full text-wrap portrait:origin-bottom portrait:text-xl landscape:origin-bottom-left landscape:text-xl landscape:lg:text-3xl"
                 style={{
@@ -82,7 +106,7 @@ const Hero = ({ handleNavigation, children }) => {
             </div>
 
             <motion.h1
-              className="origin-right text-center portrait:text-5xl landscape:text-6xl landscape:lg:text-9xl"
+              className="z-20 origin-right text-center portrait:text-5xl landscape:text-6xl landscape:lg:text-[10rem]"
               style={{
                 x: xTranslateReverse,
                 opacity: headingOpacity,

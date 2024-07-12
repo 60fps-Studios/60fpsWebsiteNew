@@ -19,7 +19,7 @@ const VideoSection = () => {
     [0.2, 0.2],
     ["blur(15px)", "blur(0px)"],
   );
-  const backgroundOpacity = useTransform(scrollYProgress, [0.2, 0.3], [1, 0], {
+  const backgroundOpacity = useTransform(scrollYProgress, [0.1, 0.2], [1, 0], {
     ease: easeOut,
   });
 
@@ -34,8 +34,9 @@ const VideoSection = () => {
           opacity: backgroundOpacity,
         }}
       />
-
-      <Video src={SHOW_REEL} />
+      <div className="m-8 bg-blue-900">
+        <Video src={SHOW_REEL} />
+      </div>
     </motion.div>
   );
 };

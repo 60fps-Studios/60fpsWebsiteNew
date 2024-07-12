@@ -11,7 +11,7 @@ const RevealCard = ({
   return (
     <div
       className={twMerge(
-        "group/outer relative flex w-full flex-col ring-2 ring-black ring-opacity-0 duration-1000 hover:ring-white hover:ring-opacity-100",
+        "group/outer relative flex w-full flex-col font-poppins ring-1 ring-black ring-opacity-0 duration-1000 hover:ring-white hover:ring-opacity-100",
         className,
       )}
     >
