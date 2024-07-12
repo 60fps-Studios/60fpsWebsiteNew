@@ -21,7 +21,7 @@ const Card = ({ image, OnClick, className }) => {
       onClick={OnClick}
     >
       <img
-        className="h-full w-full object-cover blur-[2px] saturate-0 duration-100 ease-in group-hover:blur-0 group-hover:saturate-100"
+        className="duration-100 h-full w-full object-cover blur-[2px] saturate-0 ease-in group-hover:blur-0 group-hover:saturate-100"
         src={image.image_url}
         alt={image.image_alt}
       />
@@ -40,7 +40,7 @@ const Card = ({ image, OnClick, className }) => {
             }}
             animate={isHovered ? "hover" : "initial"}
           >
-            <h4 className="rounded-lg bg-black/20 p-1 text-5xl font-semibold backdrop-blur-sm duration-500 ease-in-out group-hover:bg-black/30">
+            <h4 className="rounded-lg bg-black/20 p-1 text-2xl font-semibold backdrop-blur-sm duration-500 ease-in-out group-hover:bg-black/30 md:text-3xl lg:text-4xl">
               {image.title}
             </h4>
           </motion.div>

@@ -3,7 +3,7 @@ import { CLIENT_LOGOS } from "../../data";
 
 const Clients = () => {
   return (
-    <section className="font-poppins min-h-screen pt-12 font-semibold">
+    <section className="min-h-screen pt-12 font-poppins font-semibold">
       <div className="md:max-w-8xl mx-auto h-full md:px-10">
         <h2 className="my-12 pb-8 text-center text-5xl md:text-7xl">
           They Trust Us
