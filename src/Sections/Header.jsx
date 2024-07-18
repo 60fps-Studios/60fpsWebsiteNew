@@ -1,15 +1,25 @@
 import { Menu, Transition } from "@headlessui/react";
-import { Fragment, useEffect, useRef, useState } from "react";
+import { Fragment, useState } from "react";
+import { Link } from "react-router-dom";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { WrenchScrewdriverIcon } from "@heroicons/react/24/outline";
 
+const routes = {
+  Services: "/services",
+  Projects: "/projects",
+  "About Us": "/aboutus",
+  "Contact Us": "/contact",
+};
+
 export default function Example() {
+  const [hoveredItem, setHoveredItem] = useState(null);
+
   return (
     <div className="fixed z-20 min-w-full justify-end text-right">
       <Menu as="div" className="relative inline-block text-left">
         <div className="justify-end">
           <Menu.Button
-            className="inline-flex w-full justify-center px-8 pt-8 font-poppins text-xl font-medium text-white focus:outline-none"
+            className="z-50 inline-flex w-full justify-center px-8 py-4 font-poppins text-xl font-medium text-white focus:outline-none"
             whileHover={{
               scale: 1.25,
             }}
@@ -30,122 +40,77 @@ export default function Example() {
           leaveFrom="transform opacity-100 scale-100"
           leaveTo="transform opacity-0 scale-95"
         >
-          <Menu.Items className="absolute right-0 h-screen w-screen origin-top-right divide-y divide-gray-100 bg-black px-40 py-40 font-poppins font-medium shadow-lg ring-1 ring-black/5 focus:outline-none">
+          <Menu.Items className="absolute right-0 z-20 h-screen w-screen origin-top-right bg-black px-40 py-40 font-poppins font-medium shadow-lg focus:outline-none">
             <div className="px-1 py-1">
-              <Menu.Item>
-                {({ active }) => (
-                  <button
-                    className={`${
-                      active ? "bg-slate-900 text-white" : "text-white"
-                    } hover-move-right group flex w-full items-center rounded-md px-2 py-2 text-sm transition-colors duration-500`}
-                  >
-                    {active ? (
-                      <div className="flex">
-                        <DuplicateActiveIcon
-                          className="mr-2 h-20 w-20"
-                          aria-hidden="true"
-                        />
-                        <span className="text-7xl">Services</span>
-                      </div>
-                    ) : (
-                      <div className="flex">
-                        <DuplicateInactiveIcon
-                          className="mr-2 h-20 w-20"
-                          aria-hidden="true"
-                        />
-                        <span className="gradient-mask text-7xl">Services</span>
-                      </div>
+              {["Services", "Projects", "About Us", "Contact Us"].map(
+                (item, index) => (
+                  <Menu.Item key={index}>
+                    {({ active }) => (
+                      <Link
+                        to={routes[item]}
+                        onMouseEnter={() => setHoveredItem(item)}
+                        onMouseLeave={() => setHoveredItem(null)}
+                        className={`${
+                          active ? "bg-slate-900 text-white" : "text-white"
+                        } hover-move-right group flex w-full items-center rounded-md px-2 py-2 text-sm transition-colors duration-500`}
+                      >
+                        {active ? (
+                          <div className="flex">
+                            <Icon item={item} active={true} />
+                            <span className="text-7xl">{item}</span>
+                          </div>
+                        ) : (
+                          <div className="flex">
+                            <Icon item={item} active={false} />
+                            <span
+                              className={`${hoveredItem && hoveredItem !== item ? "gradient-mask" : ""} text-7xl`}
+                            >
+                              {item}
+                            </span>
+                          </div>
+                        )}
+                      </Link>
                     )}
-                  </button>
-                )}
-              </Menu.Item>
-              <Menu.Item>
-                {({ active }) => (
-                  <button
-                    className={`${
-                      active ? "bg-slate-900 text-white" : "text-white"
-                    } hover-move-right group flex w-full items-center rounded-md px-2 py-2 text-sm transition-colors duration-500`}
-                  >
-                    {active ? (
-                      <div className="flex">
-                        <EditActiveIcon
-                          className="mr-2 h-20 w-20"
-                          aria-hidden="true"
-                        />
-                        <span className="text-7xl">Projects</span>
-                      </div>
-                    ) : (
-                      <div className="flex">
-                        <EditInactiveIcon
-                          className="mr-2 h-20 w-20"
-                          aria-hidden="true"
-                        />
-                        <span className="gradient-mask text-7xl">Projects</span>
-                      </div>
-                    )}
-                  </button>
-                )}
-              </Menu.Item>
-              <Menu.Item>
-                {({ active }) => (
-                  <button
-                    className={`${
-                      active ? "bg-slate-900 text-white" : "text-white"
-                    } hover-move-right group flex w-full items-center rounded-md px-2 py-2 text-sm transition-colors duration-500`}
-                  >
-                    {active ? (
-                      <div className="flex">
-                        <MoveActiveIcon
-                          className="mr-2 h-20 w-20"
-                          aria-hidden="true"
-                        />
-                        <span className="text-7xl">About Us</span>
-                      </div>
-                    ) : (
-                      <div className="flex">
-                        <MoveInactiveIcon
-                          className="mr-2 h-20 w-20"
-                          aria-hidden="true"
-                        />
-                        <span className="gradient-mask text-7xl">About Us</span>
-                      </div>
-                    )}
-                  </button>
-                )}
-              </Menu.Item>
-              <Menu.Item>
-                {({ active }) => (
-                  <button
-                    className={`${
-                      active ? "bg-slate-900 text-white" : "text-white"
-                    } hover-move-right group flex w-full items-center rounded-md px-2 py-2 text-sm transition-colors duration-500`}
-                  >
-                    {active ? (
-                      <div className="flex">
-                        <ArchiveActiveIcon
-                          className="mr-2 h-20 w-20"
-                          aria-hidden="true"
-                        />
-                        <span className="text-7xl">Clients</span>
-                      </div>
-                    ) : (
-                      <div className="flex">
-                        <ArchiveInactiveIcon
-                          className="mr-2 h-20 w-20"
-                          aria-hidden="true"
-                        />
-                        <span className="gradient-mask text-7xl">Clients</span>
-                      </div>
-                    )}
-                  </button>
-                )}
-              </Menu.Item>
+                  </Menu.Item>
+                ),
+              )}
             </div>
           </Menu.Items>
         </Transition>
       </Menu>
     </div>
   );
+}
+
+function Icon({ item, active }) {
+  switch (item) {
+    case "Services":
+      return active ? (
+        <DuplicateActiveIcon className="mr-2 h-20 w-20" aria-hidden="true" />
+      ) : (
+        <DuplicateInactiveIcon className="mr-2 h-20 w-20" aria-hidden="true" />
+      );
+    case "Projects":
+      return active ? (
+        <EditActiveIcon className="mr-2 h-20 w-20" aria-hidden="true" />
+      ) : (
+        <EditInactiveIcon className="mr-2 h-20 w-20" aria-hidden="true" />
+      );
+    case "About Us":
+      return active ? (
+        <MoveActiveIcon className="mr-2 h-20 w-20" aria-hidden="true" />
+      ) : (
+        <MoveInactiveIcon className="mr-2 h-20 w-20" aria-hidden="true" />
+      );
+    case "Contact Us":
+      return active ? (
+        <ArchiveActiveIcon className="mr-2 h-20 w-20" aria-hidden="true" />
+      ) : (
+        <ArchiveInactiveIcon className="mr-2 h-20 w-20" aria-hidden="true" />
+      );
+    default:
+      return null;
+  }
 }
 
 function EditInactiveIcon(props) {

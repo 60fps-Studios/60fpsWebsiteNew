@@ -82,7 +82,7 @@ const Hero = ({ handleNavigation, children }) => {
             >
               60FPS
             </motion.h1>
-            <motion.div className="font-poppins absolute z-20 h-full origin-top-right portrait:left-16 portrait:right-10 portrait:top-10 landscape:left-auto landscape:right-12 landscape:top-5 landscape:w-1/4 landscape:lg:right-0 landscape:lg:top-28">
+            <motion.div className="absolute z-20 h-full origin-top-right font-poppins portrait:left-16 portrait:right-10 portrait:top-10 landscape:left-auto landscape:right-12 landscape:top-5 landscape:w-1/4 landscape:lg:right-0 landscape:lg:top-28">
               <StartProjectButton
                 scale={buttonScale}
                 opacity={buttonOpacity}
@@ -92,7 +92,7 @@ const Hero = ({ handleNavigation, children }) => {
             </motion.div>
           </div>
           <div className="relative z-20 flex h-1/2 justify-end px-4 portrait:items-start portrait:pt-5 landscape:items-center landscape:pt-0">
-            <div className="font-poppins absolute left-10 origin-bottom-left portrait:bottom-16 portrait:right-10 landscape:bottom-10 landscape:right-0 landscape:w-1/4 landscape:lg:bottom-28">
+            <div className="absolute left-10 origin-bottom-left font-poppins portrait:bottom-16 portrait:right-10 landscape:bottom-10 landscape:right-0 landscape:w-1/4 landscape:lg:bottom-28">
               <motion.p
                 className="w-full text-wrap portrait:origin-bottom portrait:text-xl landscape:origin-bottom-left landscape:text-xl landscape:lg:text-3xl"
                 style={{

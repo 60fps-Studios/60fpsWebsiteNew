@@ -9,7 +9,7 @@ import Clients from "../Sections/Home/Clients";
 import Footer from "../Sections/Footer";
 import Header from "../Sections/Header";
 import Breaker1 from "../Sections/Breaker1/Breaker1";
-const Home = () => {
+const ContactPage = () => {
   const navigate = useNavigate();
   const handleNavigate = (link) => {
     if (link.startsWith("http://") || link.startsWith("https://")) {
@@ -43,4 +43,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default ContactPage;

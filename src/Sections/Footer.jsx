@@ -6,7 +6,10 @@ const Footer = () => {
     <footer className="relative h-screen font-poppins">
       {/* Bg */}
       <div className="absolute inset-0 -z-10 bg-black" aria-hidden="true" />
-      <div className="absolute inset-0 -z-10 bg-black" aria-hidden="true">
+      <div
+        className="absolute inset-0 -z-10 h-full justify-center overflow-hidden bg-black"
+        aria-hidden="true"
+      >
         <Meteors number={30} />
       </div>
 
@@ -34,7 +37,7 @@ const Footer = () => {
             <ul className="space-y-2 text-2xl">
               <li>
                 <a
-                  className="text-gray-400 transition duration-150 ease-in-out hover:text-white"
+                  className="duration-150 text-gray-400 transition ease-in-out hover:text-white"
                   href="#0"
                 >
                   Payments
@@ -42,7 +45,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  className="text-gray-400 transition duration-150 ease-in-out hover:text-white"
+                  className="duration-150 text-gray-400 transition ease-in-out hover:text-white"
                   href="#0"
                 >
                   Budgeting and analytics
@@ -50,7 +53,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  className="text-gray-400 transition duration-150 ease-in-out hover:text-white"
+                  className="duration-150 text-gray-400 transition ease-in-out hover:text-white"
                   href="#0"
                 >
                   Open banking
@@ -58,7 +61,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  className="text-gray-400 transition duration-150 ease-in-out hover:text-white"
+                  className="duration-150 text-gray-400 transition ease-in-out hover:text-white"
                   href="#0"
                 >
                   Pockets
@@ -66,7 +69,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  className="text-gray-400 transition duration-150 ease-in-out hover:text-white"
+                  className="duration-150 text-gray-400 transition ease-in-out hover:text-white"
                   href="#0"
                 >
                   Subscriptions
@@ -83,7 +86,7 @@ const Footer = () => {
             <ul className="space-y-2 text-2xl">
               <li>
                 <a
-                  className="text-gray-400 transition duration-150 ease-in-out hover:text-white"
+                  className="duration-150 text-gray-400 transition ease-in-out hover:text-white"
                   href="#0"
                 >
                   About us
@@ -91,7 +94,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  className="text-gray-400 transition duration-150 ease-in-out hover:text-white"
+                  className="duration-150 text-gray-400 transition ease-in-out hover:text-white"
                   href="#0"
                 >
                   Diversity / Inclusion
@@ -99,7 +102,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  className="text-gray-400 transition duration-150 ease-in-out hover:text-white"
+                  className="duration-150 text-gray-400 transition ease-in-out hover:text-white"
                   href="#0"
                 >
                   Sustainability
@@ -107,7 +110,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  className="text-gray-400 transition duration-150 ease-in-out hover:text-white"
+                  className="duration-150 text-gray-400 transition ease-in-out hover:text-white"
                   href="#0"
                 >
                   Code of conduct
@@ -115,7 +118,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  className="text-gray-400 transition duration-150 ease-in-out hover:text-white"
+                  className="duration-150 text-gray-400 transition ease-in-out hover:text-white"
                   href="#0"
                 >
                   Financial statements
@@ -132,7 +135,7 @@ const Footer = () => {
             <ul className="space-y-2 text-2xl">
               <li>
                 <a
-                  className="text-gray-400 transition duration-150 ease-in-out hover:text-white"
+                  className="duration-150 text-gray-400 transition ease-in-out hover:text-white"
                   href="#0"
                 >
                   International products
@@ -140,7 +143,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  className="text-gray-400 transition duration-150 ease-in-out hover:text-white"
+                  className="duration-150 text-gray-400 transition ease-in-out hover:text-white"
                   href="#0"
                 >
                   Product method
@@ -148,7 +151,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  className="text-gray-400 transition duration-150 ease-in-out hover:text-white"
+                  className="duration-150 text-gray-400 transition ease-in-out hover:text-white"
                   href="#0"
                 >
                   Customers
@@ -156,7 +159,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  className="text-gray-400 transition duration-150 ease-in-out hover:text-white"
+                  className="duration-150 text-gray-400 transition ease-in-out hover:text-white"
                   href="#0"
                 >
                   Feedback
@@ -173,7 +176,7 @@ const Footer = () => {
             <ul className="space-y-2 text-2xl">
               <li>
                 <a
-                  className="text-gray-400 transition duration-150 ease-in-out hover:text-white"
+                  className="duration-150 text-gray-400 transition ease-in-out hover:text-white"
                   href="#0"
                 >
                   Community
@@ -181,7 +184,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  className="text-gray-400 transition duration-150 ease-in-out hover:text-white"
+                  className="duration-150 text-gray-400 transition ease-in-out hover:text-white"
                   href="#0"
                 >
                   Contact
@@ -189,7 +192,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  className="text-gray-400 transition duration-150 ease-in-out hover:text-white"
+                  className="duration-150 text-gray-400 transition ease-in-out hover:text-white"
                   href="#0"
                 >
                   DPA
@@ -197,7 +200,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  className="text-gray-400 transition duration-150 ease-in-out hover:text-white"
+                  className="duration-150 text-gray-400 transition ease-in-out hover:text-white"
                   href="#0"
                 >
                   Terms of service
@@ -214,7 +217,7 @@ const Footer = () => {
             <ul className="mb-4 flex md:order-1 md:mb-0 md:ml-4">
               <li>
                 <a
-                  className="flex items-center justify-center text-gray-400 transition duration-150 ease-in-out hover:text-white"
+                  className="duration-150 flex items-center justify-center text-gray-400 transition ease-in-out hover:text-white"
                   href="#0"
                   aria-label="Twitter"
                 >
@@ -229,7 +232,7 @@ const Footer = () => {
               </li>
               <li className="ml-2">
                 <a
-                  className="flex items-center justify-center text-gray-400 transition duration-150 ease-in-out hover:text-white"
+                  className="duration-150 flex items-center justify-center text-gray-400 transition ease-in-out hover:text-white"
                   href="#0"
                   aria-label="Github"
                 >
@@ -244,7 +247,7 @@ const Footer = () => {
               </li>
               <li className="ml-2">
                 <a
-                  className="flex items-center justify-center text-gray-400 transition duration-150 ease-in-out hover:text-white"
+                  className="duration-150 flex items-center justify-center text-gray-400 transition ease-in-out hover:text-white"
                   href="#0"
                   aria-label="Telegram"
                 >
